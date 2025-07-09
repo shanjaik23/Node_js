@@ -166,3 +166,48 @@ a.secondary {
     filter: invert();
   }
 }
+
+.addtocart {
+  display: block;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 20px; 
+  margin: 50px;
+  
+}
+
+.productgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.productcard {
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.carttop{
+  
+  padding: 5px;
+  text-align: center;
+  padding-top: 10px;
+}
+.productcard:hover{
+ transform: scale(1.02);
+}
+#searchInput important{
+  height: 30px;
+  padding: 8px;
+  width: 70%;
+  margin-bottom: 20px;
+
+}
