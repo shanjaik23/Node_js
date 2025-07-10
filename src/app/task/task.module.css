@@ -1,0 +1,125 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+  color: white;         /* 👈 Sets text color to white */
+  font-weight: bold;
+  font-size: x-large;
+ font-family: 'Segoe UI', sans-serif;
+   padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav li a:hover {
+  background-color: #ffffff33;  /* 👈 Subtle white hover */
+  text-decoration: none;
+}
+.title {
+  padding-top: 80px;
+  
+ 
+}
+.title input{
+   height: 48px;              /* Same as button height */
+  padding: 0 16px;           /* Horizontal padding only */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 24px;       /* Rounded corners like button */
+  flex: 1;                   /* Makes it grow to fill available space */
+  box-sizing: border-box;
+  margin-right: 15px;
+}
+.title h1 {
+  font-size: 3rem;
+  font-weight: bold;
+ 
+}
+
+.content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.toDoBox {
+  width: 60%;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px #0000001a;
+  color: #000000;
+  padding: 20px;
+  z-index: 10;
+}
+.toDoBox table{
+    width: 100%;
+    height:auto;
+    justify-content: space-between;
+    border-radius: 4px;
+  box-shadow: 0px 4px 12px #0000001a;
+}
+.addButton{ 
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #1976d2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.addButton:hover{
+  background-color: #1976d2;
+  color: #ffffff;
+}
+.background {
+  background-color: #1976d2; /* Blue */
+  color: white;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.background::before
+ {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100px;
+  background: white;
+  transform: rotate(-75deg);
+  left: -98%;
+  z-index: 0;
+}
+.background::after{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100px;
+  background: white;
+  transform: rotate(-75deg);
+  right: -95%;
+  z-index: 0;
+}
+.background::before {
+  top: -20px;
+}
+
+
+

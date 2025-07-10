@@ -1,0 +1,81 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.background {
+  background-color: #1976d2; /* Blue */
+  color: white;
+  
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.homeLeft,.homeRight{
+  max-width: 750px;
+  flex: wrap;
+}
+ .homePage{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  
+ }
+ .strong{
+    font-size: 20px;
+    color: #ffffff;
+    padding-left: 50px;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;         /* 👈 Sets text color to white */
+  font-weight: bold;
+  font-size: x-large;
+ font-family: 'Segoe UI', sans-serif;
+   padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav li a:hover {
+  background-color: #ffffff33;  /* 👈 Subtle white hover */
+  text-decoration: none;
+}
+
+/* Diagonal white accents */
+.background::before
+ {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100px;
+  background: white;
+  transform: rotate(-75deg);
+  left: -98%;
+  z-index: 0;
+}
+.background::after{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100px;
+  background: white;
+  transform: rotate(-75deg);
+  right: -95%;
+  z-index: 0;
+}
+.background::before {
+  top: -20px;
+}
+
